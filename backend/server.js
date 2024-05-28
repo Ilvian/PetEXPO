@@ -1,6 +1,6 @@
 import express from "express";
 import dotenv from "dotenv";
-import connectDB from "./config/database.js";
+import connectDB from "./models/database.js";
 import dogRouter from "./routes/dogRoutes.js";
 
 dotenv.config();
