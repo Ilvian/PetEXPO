@@ -35,7 +35,6 @@ export async function createDog(req, res) {
       image,
     });
 
-    console.log("Dog created succesfully");
     res.status(201).json(newDog);
   } catch (error) {
     console.error("Error creating dog:", error);

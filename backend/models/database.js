@@ -1,6 +1,7 @@
 import mongoose from "mongoose";
 import dotenv from "dotenv";
-dotenv.config();
+import path from "path"
+dotenv.config({ path: path.resolve('../.env') });
 
 const db = process.env.DATABASE;
 
