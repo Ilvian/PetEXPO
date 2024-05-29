@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import axios from "../axiosConfig";
+import Header from "./header";
 
 const Dogs = () => {
   const [dogs, setDogs] = useState([]);
@@ -21,8 +22,9 @@ const Dogs = () => {
 
   return (
     <div>
+      <Header />
       <h2>Dogs Gallery</h2>
-      <ul style={{ listStyleType: 'none', padding: 0 }}>
+      <ul style={{ listStyleType: "none", padding: 0 }}>
         {dogs.map((dog) => (
           <li key={dog.id}>
             <strong>Name:</strong> {dog.name} <br />
@@ -33,7 +35,11 @@ const Dogs = () => {
             <strong>Temperament:</strong> {dog.temperament} <br />
             <strong>Colors:</strong> {dog.colors.join(", ")} <br />
             <strong>Description:</strong> {dog.description} <br />
-            <img src={dog.image} alt={dog.name} style={{ width: '200px', height: 'auto' }} />
+            <img
+              src={dog.image}
+              alt={dog.name}
+              style={{ width: "200px", height: "auto" }}
+            />
           </li>
         ))}
       </ul>

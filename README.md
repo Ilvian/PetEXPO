@@ -12,3 +12,4 @@ npm i cors
 npx create-react-app frontend
 npm i axios
 npm i react-router-dom
+npm i @mui/material @emotion/react @emotion/styled
