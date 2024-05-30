@@ -7,6 +7,7 @@ npm i nodemon
 npm i dotenv
 npm i mongoose
 npm i cors
+npm i axios
 
 ### frontend
 npx create-react-app frontend
