@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import axios from "../axiosConfig";
 import Header from "./header";
+import { Card, CardContent, CardMedia, Grid, Typography } from "@mui/material";
 
 const Dogs = () => {
   const [dogs, setDogs] = useState([]);
@@ -24,25 +25,28 @@ const Dogs = () => {
     <div>
       <Header />
       <h2>Dogs Gallery</h2>
-      <ul style={{ listStyleType: "none", padding: 0 }}>
+      <Grid container spacing={2}>
         {dogs.map((dog) => (
-          <li key={dog.id}>
-            <strong>Name:</strong> {dog.name} <br />
-            <strong>Breed Group:</strong> {dog.breed_group} <br />
-            <strong>Size:</strong> {dog.size} <br />
-            <strong>Lifespan:</strong> {dog.lifespan} <br />
-            <strong>Origin:</strong> {dog.origin} <br />
-            <strong>Temperament:</strong> {dog.temperament} <br />
-            <strong>Colors:</strong> {dog.colors.join(", ")} <br />
-            <strong>Description:</strong> {dog.description} <br />
-            <img
-              src={dog.image}
-              alt={dog.name}
-              style={{ width: "200px", height: "auto" }}
-            />
-          </li>
+          <Grid item xs={12} sm={6} md={4} lg={3} key={dog.id}>
+            <Card>
+              <CardMedia
+                component="img"
+                height="200"
+                image={dog.image}
+                alt={dog.name}
+              />
+              <CardContent>
+                <Typography gutterBottom variant="h5" component="div">
+                  {dog.name}
+                </Typography>
+                <Typography variant="body2" color="textSecondary" component="p">
+                  <strong>Origin:</strong> {dog.origin}
+                </Typography>
+              </CardContent>
+            </Card>
+          </Grid>
         ))}
-      </ul>
+      </Grid>
     </div>
   );
 };
