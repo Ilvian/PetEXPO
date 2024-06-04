@@ -8,6 +8,8 @@ npm i dotenv
 npm i mongoose
 npm i cors
 npm i axios
+npm i poplib
+npm i mailparser
 
 ### frontend
 npx create-react-app frontend
