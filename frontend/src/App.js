@@ -6,6 +6,7 @@ import Birds from "./components/birdGallery";
 import HomePage from "./components/homePage";
 import AboutUs from "./components/aboutUs";
 import ContactUs from "./components/contactUs";
+import AdminPage from "./components/admin/admin";
 
 function App() {
   return (
@@ -13,10 +14,11 @@ function App() {
       <Routes>
         <Route path="/" element={<HomePage />} />
         <Route path="/dogs" element={<Dogs />} />
+        <Route path="/admin" element={<AdminPage />} />
         <Route path="/cats" element={<Cats />} />
         <Route path="/birds" element={<Birds />} />
-        <Route path="/AboutUs" element={<AboutUs />} />
-        <Route path="/ContactUs" element={<ContactUs />} />{" "}
+        <Route path="/aboutUs" element={<AboutUs />} />
+        <Route path="/contactUs" element={<ContactUs />} />{" "}
       </Routes>
     </BrowserRouter>
   );

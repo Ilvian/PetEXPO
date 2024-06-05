@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { Container, Typography, TextField, Button } from "@mui/material";
+import Header from "./header"
 
 const ContactUs = () => {
   const [email, setEmail] = useState("");
@@ -28,6 +29,9 @@ const ContactUs = () => {
   };
 
   return (
+    
+    <>
+    <Header />
     <Container>
       <Typography variant="h2" align="center" gutterBottom>
         Contact Us
@@ -63,16 +67,9 @@ const ContactUs = () => {
           Send
         </Button>
       </form>
-      <Typography variant="body1" paragraph>
-        If you prefer to reach out to us through other means, here is our address:
-      </Typography>
-      <Typography variant="body1">
-        123 Main Street, Cityville, State, Country
-      </Typography>
-      <Typography variant="body1">
-        Our office hours are Monday through Friday, from 9:00 AM to 5:00 PM (EST).
-      </Typography>
     </Container>
+    </>
+
   );
 };
 

@@ -17,7 +17,7 @@ const bird = new mongoose.Schema({
   diet: String,
   description: String,
   weight_kg: Number,
-  height_cm: Number,
+  wingspan_cm: Number,
   image: String,
 });
 

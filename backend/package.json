@@ -13,14 +13,13 @@
   "license": "ISC",
   "dependencies": {
     "axios": "^1.7.2",
+    "bcrypt": "^5.1.1",
+    "cookie-parser": "^1.4.6",
     "cors": "^2.8.5",
     "dotenv": "^16.4.5",
     "express": "^4.19.2",
-    "imap": "^0.8.19",
-    "mailparser": "^3.7.1",
+    "jsonwebtoken": "^9.0.2",
     "mongoose": "^8.4.0",
-    "nodemon": "^3.1.1",
-    "pop3": "^0.2.0",
-    "poplib": "^0.1.7"
+    "nodemon": "^3.1.1"
   }
 }

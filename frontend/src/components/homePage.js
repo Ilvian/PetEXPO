@@ -101,7 +101,7 @@ const HomePage = () => {
             </Link>
           </Grid>
           <Grid item xs={12} md={4}>
-          <Link to="/cat">
+          <Link to="/cats">
             <Card>
               <CardMedia
                 component="img"
@@ -121,7 +121,7 @@ const HomePage = () => {
             </Link>
           </Grid>
           <Grid item xs={12} md={4}>
-          <Link to="/bird">
+          <Link to="/birds">
             <Card>
               <CardMedia
                 component="img"

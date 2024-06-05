@@ -12,7 +12,7 @@ export async function createBird(req, res) {
       diet,
       description,
       weight_kg,
-      height_cm,
+      wingspan_cm,
       image
     } = req.body;
 
@@ -33,7 +33,7 @@ export async function createBird(req, res) {
         diet,
         description,
         weight_kg,
-        height_cm,
+        wingspan_cm,
         image
     });
 
