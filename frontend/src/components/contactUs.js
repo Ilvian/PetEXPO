@@ -21,11 +21,9 @@ const ContactUs = () => {
 
   const handleSubmit = (event) => {
     event.preventDefault();
-    // Handle form submission here, e.g., sending email
     console.log("Email:", email);
     console.log("Subject:", subject);
     console.log("Message:", message);
-    // You can send this data to your backend for further processing
   };
 
   return (

@@ -15,7 +15,7 @@ const HomePage = () => {
       <Header />
       <Box
         sx={{
-            backgroundColor: "red",
+            backgroundColor: "crimson",
             color: "white",
             py: 8,
             px: 2,
